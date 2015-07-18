@@ -2,6 +2,7 @@
 layout: page
 title: Hmmmm....
 tagline: thoughts that won't change the world
+excerpt: Notes on my experiments with technology. My lessons learned will be documented here, warts and all. Maybe it will be useful to someone.
 ---
 {% include JB/setup %}
 
