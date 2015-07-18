@@ -10,7 +10,7 @@ tagline: thoughts that won't change the world
     <li>
 	<span>{{ post.date | date_to_string }}</span> &raquo; 
 	<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-	{{ post.except }}
+	{{ post.excerpt }}
     </li>
   {% endfor %}
 </ul>
