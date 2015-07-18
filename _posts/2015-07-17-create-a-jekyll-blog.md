@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Creating a Jekyll Blog
+tags : [jekyll]
 ---
 
 I've not been blogging for a numnber of years, and I've never had a
