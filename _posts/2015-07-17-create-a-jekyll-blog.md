@@ -26,7 +26,7 @@ unmaintained now. I had a clean looking sight pretty much out of the
 box. I made the following customizations:
 
   * Switched to the "Twitter" theme (edit the files in _layouts directory replacing the bootstrap3 theme references with twitter ones)
-  * Removes the Categories and Pages pages (removed the approprite *.html files), which also made the navigation menu
+  * Removes the Categories and Pages pages (removed the approprite *.html files), which also made the navigation menu less cluttered
   * Edited index.html to show an index of posts (with excerpts)
 
 ## Things to Do
