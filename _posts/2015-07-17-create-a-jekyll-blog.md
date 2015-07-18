@@ -36,7 +36,7 @@ do. Here's some ideas:
 
   * [DONE] Use a [Docker container to enable previewing of the Jekyll site]({{ BASE_PATH }}/2015/07/18/docker-container-for-jekyll) on any dev machine
   * Add social sharing buttons (at least to twitter)
-  * Add Twitter cards
+  * [DONE] Add [Twitter cards]({{ BASE_PATH }}/2015/07/18/adding-twitter-cards-to-jekyll-site)
   * Add an about page
   * Add links to RSS and Atom feeds
   * Make the page.excerpt a meta="description" tag in the head
