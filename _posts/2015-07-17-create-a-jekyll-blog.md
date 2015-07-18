@@ -4,11 +4,12 @@ title: Creating a Jekyll Blog
 tags : [jekyll]
 ---
 
-I've not been blogging for a numnber of years, and I've never had a
-personal blog that lasted. Maybe now is the time to change that. My
-goal is not to use this blog to create high quality content, this is a
-place for me to keep notes, mostly for myself to come back to, but
-maybe others will find it useful.
+I've not maintained a blog for a number of years, maybe now is the
+time to change that. My goal withthis blog is not to create and
+maintain high quality content, I have other outputs for the polished
+stuff. This is a place for me to keep notes, mostly for myself to come
+back to, but maybe others will find them useful as they explore the
+same technologies as I do.
 
 So here's the first note, how this blog was created:
 
