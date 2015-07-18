@@ -22,4 +22,4 @@ CLIENT_DIR=`echo $PWD | cut -c 3-`
 echo "Mounting //$CLIENT_IP$CLIENT_DIR as $PWD"
 docker-machine ssh $DEV_MACHINE_NAME -- "sudo mount -t cifs //$CLIENT_IP$CLIENT_DIR $PWD -o user=$USER_NAME,password=$USER_PASSWORD"
 
-docker run --rm -v "$PWD:/src" -p 4000:4000 -t jekyll grahamc/jekyll serve -H $CLIENT_IP --drafts --force_polling
+docker run --rm -v "/$PWD:/src" -p 4000:4000 --name jekyll grahamc/jekyll serve -H $CLIENT_IP --drafts --force_polling
