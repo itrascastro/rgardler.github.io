@@ -58,7 +58,7 @@ Note that the folder you want to mount must be shared on Windows. Your Home dire
 Once you have run this you cn mount directories as normal, e.g. here's how I run my [Jekyll container]({{ BASE_PATRH }}/2015/07/18/docker-container-for-jekyll):
 
 {% highlight bash %}
-docker run --rm -v "/$PWD:/src" -p 4000:4000 -t jekyll grahamc/jekyll serve -H $CLIENT_IP --drafts --force_polling
+docker run --rm -v "/$PWD:/src" -p 4000:4000 --name jekyll grahamc/jekyll serve -H 192.168.1.25 --drafts --force_polling
 {% endhighlight %}
 
 Note the extra '/' before '$PWD' in this command. This isn't needed on Linux.
