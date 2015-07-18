@@ -19,6 +19,9 @@
   right: 0;
   font-size: 0.8em; }
 
+.post > span.socialshare {
+  float:right}
+
 .post > .more {
   margin: 10px 0;
   text-align: left; }
@@ -27,6 +30,9 @@
 .post-full .date {
   margin-bottom: 20px;
   font-weight: bold; }
+
+.post-full .socialshare {
+  float:right}
 
 /* tag_box */
 .tag_box {

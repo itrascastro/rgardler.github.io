@@ -6,9 +6,17 @@
   <div class="span12">
     <div class="date">
       <span>{{ page.date | date_to_long_string }}</span>
+      <span class="socialshare">
+	<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="rgardler" data-size="large" data-count="none" data-hashtags="{{ page.tags[0] }}">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </span>
     </div>
+
     <div class="content">
       {{ content }}
+    </div>
+
+    <div>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="rgardler" data-size="large" data-count="none" data-hashtags="{{ page.tags[0] }}">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </div>
 
   {% unless page.categories == empty %}
@@ -28,6 +36,7 @@
   {% endunless %}  
 
     <hr>
+
     <div class="pagination">
       <ul>
       {% if page.previous %}
