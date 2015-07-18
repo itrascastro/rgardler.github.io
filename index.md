@@ -11,10 +11,10 @@ tagline: thoughts that won't change the world
 	<span>{{ post.date | date_to_string }}</span> &raquo; 
 	<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
 	{{ post.excerpt }}
-	{% unless page.tags == empty %}
+	{% unless post.tags == empty %}
 	  <ul class="tag_box inline">
 	      <li><i class="icon-tags"></i></li>
-	      {% assign tags_list = page.tags %}
+	      {% assign tags_list = post.tags %}
 	      {% include JB/tags_list %}
   	  </ul>
 	{% endunless %}  
