@@ -28,8 +28,8 @@ commonly downloaded one at the time,
 Now just visit the site at http://CLIENT_IP:4000
 
 This isn't perfect, for example when viewing the index page we don't
-see excepts from the posts we see the whole post. But it is a good
-start.
+see excerpts from the posts (as we do on the live site) however, we
+see the whole post instead. But it is a good start.
 
 ## Windows Gotchas
 
@@ -38,7 +38,7 @@ expected, as a workaround run the following script (stored in
 script/dev.sh). Note that this script will start the container and
 mount the shared folder.
 
-{% highlight Bash %}
+{% highlight bash %}
 # There is currently (5/31/2015) a bug in docker-machine/boot2docker that
 # means shared folders do not work as expected. To work around this
 # bug run the following script (after editing the last line) each time you 
