@@ -28,7 +28,8 @@ containers:
 ## Local Development ##
 
 Development is undertaken on either a local client or a remote
-machine.
+machine. It's easier, however, to use a local machine as there is
+minimal delay when testing a change.
 
 ## Staging Servers ##
 
