@@ -5,14 +5,14 @@ tagline: thoughts that won't change the world
 ---
 {% include JB/setup %}
 
-<ul class="posts">
+<div class="posts">
   {% for post in site.posts %}
-    <li>
-	<span>{{ post.date | date_to_string }}</span> &raquo; 
-	<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+    <div class="post">
+	<h3>{{ post.title }} <span class="date">{{ post.date | date_to_string }}</span></h3>
 	{{ post.excerpt }}
-    </li>
+        <a class="more" href="{{ BASE_PATH }}{{ post.url }}">Read More...</a>
+    </div>
   {% endfor %}
-</ul>
+</div>
 
 
