@@ -34,7 +34,7 @@ box. I made the following customizations:
 This is a good start and I'm happy with it, but there is more to
 do. Here's some ideas:
 
-  * Use a Docker container to enable previewing of the site on any dev machine
+  * [DONE] Use a [Docker container to enable previewing of the Jekyll site](2015-07-18-docker-container-for-jekyll) on any dev machine
   * Add social sharing buttons (at least to twitter)
   * Add Twitter cards
   * Add an about page
