@@ -40,6 +40,12 @@ some appropriate CSS. I needed to tweak the HTML as follows:
   * Made 'data-text' the value of 'page.title'
   * Made the value of data-hashtags the value of 'page.tags[0]'
   
+I chose to add the twitter widget in two locations, one at the top and
+one at the bottom, by the tags list.
+
+## See the Changes on GitHub ##
+
+You can view the code changes on [GitHub](https://github.com/rgardler/rgardler.github.io/commit/abef63daa9c1761be8de2fb939e84993c8141c3b).
 
 ## Other Twitter Stuff I (or maybe you) Could Do ##
 
