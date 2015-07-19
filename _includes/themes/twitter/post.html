@@ -15,9 +15,21 @@
       {{ content }}
     </div>
 
-    <div>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="rgardler" data-size="large" data-count="none" data-hashtags="{{ page.tags[0] }}">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <div class="pagination">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+      {% else %}
+        <li class="prev disabled"><a>&larr; Previous</a></li> 
+      {% endif %}
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li> 
+      {% else %}
+        <li class="next disabled"><a>Next &rarr;</a>
+      {% endif %}
+      </ul>
     </div>
+
 
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
@@ -28,31 +40,31 @@
   {% endunless %}  
 
   {% unless page.tags == empty %}
+    <div> 
+    <h3>Related Posts</h3>
+
+    <ul>
+      {% for post in site.posts %}
+        {% for tag in page.tags %}
+          {% if post.url != page.url %}
+            {% if post.tags contains tag %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+	      {% break %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+
     <ul class="tag_box inline">
       <li><i class="icon-tags"></i></li>
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
     </ul>
+
+    </div>
   {% endunless %}  
 
-    <hr>
-
-    <div class="pagination">
-      <ul>
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
-      {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
-      {% endif %}
-      </ul>
-    </div>
-    <hr>
-    {% include JB/comments %}
+  {% include JB/comments %}
   </div>
 </div>
