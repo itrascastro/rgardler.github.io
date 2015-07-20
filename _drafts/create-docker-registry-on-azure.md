@@ -29,7 +29,7 @@ FIXME: write a post about managing storage accounts with the CLI
 Since there is an official container that provides the registry all we
 need to do is start that container on our host.
 
-{% higlight bash %}
+{% highlight bash %}
 docker run -d -p 5000:5000 \
      -e REGISTRY_STORAGE=azure \
      -e REGISTRY_STORAGE_AZURE_ACCOUNTNAME="<storage-account>" \
