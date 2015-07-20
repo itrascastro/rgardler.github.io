@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding a CSS GitHUb Ribbon to a Jekyll Site
+title: Adding a CSS GitHub Ribbon to a Jekyll Site
 tags: [jekyll, css]
 ---
 
