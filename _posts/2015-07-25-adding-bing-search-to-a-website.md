@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding a Bing Search Box to a Website
-tags: [bing]
+tags: [bing, jekyll]
 ---
 
 GitHub pages provide no means for search and you can't use Jekyll

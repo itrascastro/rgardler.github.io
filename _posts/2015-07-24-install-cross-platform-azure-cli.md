@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: post
 title: Install the Cross Platform Azure CLI
-tag: [azure, cli]
+tags: [azure, cli]
 ---
 
 There are many ways of managing your Azure subscription and the
