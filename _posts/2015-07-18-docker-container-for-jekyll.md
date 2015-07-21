@@ -33,10 +33,9 @@ see the whole post instead. But it is a good start.
 
 ## Windows Gotchas
 
-Shared folders do not currently work as expected in Boot2Docker as
-expected, as a workaround run the following script (stored in
-script/dev.sh). Note that this script will start the container and
-mount the shared folder.
+Shared folders do not currently work as expected in Boot2Docker, as 
+a workaround run the following script (stored in script/devMachine.sh). Note 
+that this script will start the container and mount the shared folder.
 
 {% highlight bash %}
 # There is currently (5/31/2015) a bug in docker-machine/boot2docker that
