@@ -61,7 +61,12 @@
 .post > h3.title span.date {
   position: absolute;
   right: 0;
-  font-size: 0.8em; }
+  font-size: 0.8em; 
+}
+
+span.date {
+  float: right;
+}
 
 .post > span.socialshare {
   float:right}
