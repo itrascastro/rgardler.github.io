@@ -55,7 +55,14 @@
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
-        </div>
+
+	  <div class="searchbox">
+	    <form method="get" action="http://www.bing.com/search">
+	      <input id="searchinput" type="text" placeholder="Search..." name="q" value="" /> 
+	      <input type="hidden" name="q1" value="site:{{site.production_url}}" />
+	    </form>
+	  </div>
+	</div>
       </div>
     </div>
 
