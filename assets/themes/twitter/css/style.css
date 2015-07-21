@@ -41,7 +41,7 @@
 
 .searchbox {
   float:right;
-  width: 20em;
+  width: 50%;
   padding: 3px;
   text-overflow: elipses;
   border:0;

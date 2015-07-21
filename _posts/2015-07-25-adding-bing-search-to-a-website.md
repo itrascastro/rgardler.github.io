@@ -29,7 +29,7 @@ following:
 {% highlight css %}
 .searchbox {
   float:right;
-  width: 20em;
+  width: 50%;
   padding: 3px;
   border:0;
   outline: none;
