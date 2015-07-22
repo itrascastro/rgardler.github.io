@@ -30,7 +30,7 @@ In the resulting shell execute the following command:
 
 {% highlight bash %}
 curl -L -k https://github.com/docker/machine/releases/download/v0.3.1/docker-machine_windows-amd64.exe > /bin/docker-machine
-{% endhiglight %}
+{% endhighlight %}
 
 NOTE 1: The '-k' switch in the above command causes curl to operate in
 insecure mode. If you are the cautious type (and you should be) then
@@ -48,7 +48,7 @@ useful. To install Docker as well run the following command:
 
 {% highlight bash %}
 curl -L https://get.docker.com/builds/Windows/x86_64/docker-latest.exe > /bin/docker
-{% endhiglight %}
+{% endhighlight %}
 
 # Install Docker Machine on Linux
 
@@ -72,13 +72,13 @@ sudo wget https://get.docker.com/builds/Linux/x86_64/docker-latest -O /usr/local
 sudo chmod +x /usr/local/bin/docker
 {% endhighlight %}
 
-# Verify the Docker Machine install
+# Verify the Docker Machine Install
 
 You should now be able to run "docker-machine --version" and get a
 response. If you installed Docker then you can also verify it has
 installed correctly with "docker --version".
 
-# Create a Docker Machine on the client
+# Create a Docker Machine on the Client
 
 If you have VirtualBox (on Linux or Windows) or Hyper-V (Windows only)
 you can now start working with docker-machine. Whilst this post is
@@ -180,10 +180,11 @@ creating the host):
 
 {% highlight bash %}
 eval "$(docker-machine env $MACHINE_NAME)"
-(% endhighlight %)
+{% endhighlight %}
 
 From this point forward you use the Docker CLI as you would on any
-platform. For example to fire up a BusyBox container on your host and have it report information about itself you could run:
+platform. For example to fire up a BusyBox container on your host and
+have it report information about itself you could run:
 
 {% highlight bash %}
 docker run busybox uname -a
@@ -191,5 +192,11 @@ docker run busybox uname -a
 
 # Next steps
 
-At this point you should familiarize yourself with the Docker tools, perhaps through some ("hello world" containers](https://docs.docker.com/userguide/dockerizing/). Alternatively you could take a look at my [containerized demo application](https://github.com/rgardler/AzureDevTestDeploy) which provides a multi-container application complete with scripts for building and deploying it.
+At this point you should familiarize yourself with the Docker tools,
+perhaps through some ["hello world"
+containers](https://docs.docker.com/userguide/dockerizing/). Alternatively
+you could take a look at my [containerized demo
+application](https://github.com/rgardler/AzureDevTestDeploy) which
+provides a multi-container application complete with scripts for
+building and deploying it.
 
