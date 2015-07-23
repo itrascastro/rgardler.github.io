@@ -27,11 +27,6 @@ Boot2Docker guest. This only needs to be run once for each Docker host
 you create.
 
 {% highlight bash %}
-# There is currently (5/31/2015) a bug in docker-machine/boot2docker that
-# means shared folders do not work as expected. To work around this
-# bug run the following script (after editing the last line) each time you 
-# provsiion a hyper-v docker-machine.
-
 read -p "What is the name of the Docker machine you want to configure?" DEV_MACHINE_NAME
 echo
 read -p "What is the username for your Windows user account?" USER_NAME
