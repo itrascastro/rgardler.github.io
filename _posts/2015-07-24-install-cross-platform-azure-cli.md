@@ -35,7 +35,7 @@ On Linux you will likely need to use 'sudo'.
 
 If you already have an Azure subscription you can skip to the next
 section. If you have an MSDN subscription then you can activiate your
-[includd Azure
+[included Azure
 credits](http://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/). Alternatively
 you can start a [free
 trial](http://www.windowsazure.com/en-us/pricing/free-trial/?WT.mc_id=AA4C1C935).
