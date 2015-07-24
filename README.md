@@ -5,3 +5,4 @@ It's more likely that someone would want to pick up my Jekyll and Bootstrap conf
 I welcome contributions to both content and configuration, though in reality I dont's expect to see any.
 
 All content is under the MIT license.
+
