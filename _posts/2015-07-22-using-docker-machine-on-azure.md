@@ -56,8 +56,8 @@ Since Linux already includes the dependencies you need to run Docker
 Machine you can simply go ahead and run the following commands:
 
 {% highlight bash %}
-sudo wget https://github.com/docker/machine/releases/download/v0.3.1/docker-machine_linux-amd64 -O /usr/local/bin/docker-machine
-sudo chmod +x /usr/local/bin/docker-machine
+sudo wget https://get.docker.com/builds/Linux/x86_64/docker-latest -O /usr/local/bin/docker
+sudo chmod +x /usr/local/bin/docker
 {% endhighlight %}
 
 NOTE: You might want to check whether v0.3.1 is the latest version by visiting the [Docker Machine releases page](https://github.com/docker/machine/releases)
@@ -68,8 +68,6 @@ that you can mange the Docker host you create.
 {% highlight bash %}
 sudo wget https://github.com/docker/machine/releases/download/v0.3.1/docker-machine_linux-amd64 -O /usr/local/bin/docker-machine
 sudo chmod +x /usr/local/bin/docker-machine
-sudo wget https://get.docker.com/builds/Linux/x86_64/docker-latest -O /usr/local/bin/docker
-sudo chmod +x /usr/local/bin/docker
 {% endhighlight %}
 
 # Verify the Docker Machine Install
