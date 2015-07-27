@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Create a Django App Using Docker
-tags:[docker, container, django]
+tags: [docker, container, django]
 ---
 
 Creating a Dockerized Django application is easy. Here's the approch I
@@ -17,7 +17,7 @@ that.
 You will probably also want to install Docker Machine as this tool
 makes it easier to create Docker hosts for development.
 
-I wrote an earlier post on installing [Docker and Docker Machine]({% post_url 2015-07-28-install-docker-and-docker-machine %}) so I won't repeat things here.
+I wrote an earlier post on installing [Docker and Docker Machine]({% post_url 2015-07-27-install-docker-and-docker-machine %}) so I won't repeat things here.
 
 # Creating your Django Application
 
