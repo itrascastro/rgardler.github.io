@@ -57,6 +57,7 @@ your subscription credentials into your installation of the command
 line tools. Run the command:
 
 {% highlight bash %}
+azure config mode asm
 azure account download 
 {% endhighlight %}
 
