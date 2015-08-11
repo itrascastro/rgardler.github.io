@@ -1,5 +1,5 @@
 ---
-layout post
+layout: post
 title: Simple Load Balancing for Docker Containers
 tags: [docker, load balancing]
 ---
@@ -55,4 +55,7 @@ docker run -d -p 80:80 --name=stage_web --link stage_web1:stage_web1 --link stag
 {% endhighlight %}
 
 That's it!
+
+We now have a web application load balanced across two containers,
+each of which talk to a single REST API container.
 
