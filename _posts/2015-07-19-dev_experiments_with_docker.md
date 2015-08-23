@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Experiments With Development Using Docker
-tags: [devops, devtest, containers, docker]
+tags: [devops, devtest, container, docker]
 ---
 
 I've been working with Docker for quite some time at Microsoft. A
