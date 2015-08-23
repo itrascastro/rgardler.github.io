@@ -28,8 +28,8 @@ that.
 You will probably also want to install Docker Machine as this tool
 makes it easier to create Docker hosts for development.
 
-I wrote an earlier post on installing [Docker and Docker Machine]({%
-post_url 2015-07-27-install-docker-and-docker-machine %}) so I won't
+I wrote an earlier post on installing
+[Docker and Docker Machine]({% post_url 2015-07-27-install-docker-and-docker-machine %}) so I won't
 repeat things here.
 
 # Creating your Django Dev Container

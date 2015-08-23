@@ -70,7 +70,7 @@ command=/start-serf.sh
 numprocs=1 
 autostart=true 
 autorestart=true 
-{% highlight %}
+{% endhighlight %}
 
 ## Build the container image
 

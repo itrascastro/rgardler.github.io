@@ -1,7 +1,7 @@
 ---
-layout:post
+layout: post
 title: Getting Started With Docker Swarm on Azure
-tags: swarm, docker, azure, containers
+tags: [swarm, docker, azure, containers]
 ---
 
 Docker Swarm allows you to manage a cluster of Docker Hosts as if they
@@ -28,7 +28,7 @@ provider.
 
 To follow this guide you need a basic familiarality with Docker
 Machine and the Docker CLI. My guide to getting started with [Docker
-Machine]({% post_url 2015-07-22-using-docker-machine-on-azure %} will
+Machine]({% post_url 2015-07-22-using-docker-machine-on-azure %}) will
 explain what you need to follow along here.
 
 You could install Swarm on your client machine in order to create and
@@ -87,7 +87,7 @@ correct docker host before running this command:
 
 {% highlight bash %}
 sid=$(docker run swarm create)
-{% endhighligh %)
+{% endhighlight %}
 
 This command creates a Swarm cluster and returns a Swarm ID, which we
 store in $sid for later use.
@@ -149,7 +149,7 @@ Now lets deploy our first container:
 
 {% highlight bash %}
 docker run -itd --box0 busybox
-{%endhighlight %}
+{% endhighlight %}
 
 Because we are using Swarm we do not know which of the two nodes
 this has been created on. If we want to know we can find out by
@@ -157,7 +157,7 @@ looking at the running processes on the Swarm:
 
 {% highlight bash %}
 docker ps
-{%endhighlight %}
+{% endhighlight %}
 
 Lets use a for loop to create some more containers:
 
@@ -165,14 +165,14 @@ Lets use a for loop to create some more containers:
 for name in box1 box2 box3 box4 box5 box6;
  do docker run -itd --name $name busybox;
 done
-{%endhighlight %}
+{% endhighlight %}
 
 Now convince yourself that you are using Swarm to schedule where these
 are deployed:
 
 {% highlight bash %}
 docker ps
-{%endhighlight %}
+{% endhighlight %}
 
 You should see a fairly even distribution of the containers across
 your two nodes.
