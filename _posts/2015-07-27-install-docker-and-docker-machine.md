@@ -29,7 +29,7 @@ Bash" application - run it.
 In the resulting shell execute the following command:
 
 {% highlight bash %}
-curl -L -k https://github.com/docker/machine/releases/download/v0.3.1/docker-machine_windows-amd64.exe > /bin/docker-machine
+curl -L -k https://github.com/docker/machine/releases/download/v0.4.1/docker-machine_windows-amd64.exe > /bin/docker-machine
 {% endhighlight %}
 
 NOTE 1: The '-k' switch in the above command causes curl to operate in
@@ -38,7 +38,7 @@ you will want to download the file using a browser and copy it
 manually into "C:\Program Files (x86)\Git\bin" so that your browser
 verifies the host serving this file.
 
-NOTE 2: You might want to check whether v0.3.1 is the latest version by
+NOTE 2: You might want to check whether v0.4.1 is the latest version by
 visiting the [Docker Machine releases
 page](https://github.com/docker/machine/releases)
 
