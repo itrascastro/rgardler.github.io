@@ -148,7 +148,7 @@ simply create the containers on the host your master is running on.
 Now lets deploy our first container:
 
 {% highlight bash %}
-docker run -itd --box0 busybox
+docker run -itd --name box0 busybox
 {% endhighlight %}
 
 Because we are using Swarm we do not know which of the two nodes
