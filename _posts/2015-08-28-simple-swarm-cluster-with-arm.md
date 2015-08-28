@@ -7,7 +7,7 @@ tags: [swarm, docker, azure, container]
 Azure Resource Manager Templates provide a way to manage Azure
 resources in code. In this post we'll look at how to create a Docker
 Swarm cluster using an ARM template. This has some advantages over the
-[docker-machine commands examined]({% post_url 2015-08-23-getting_started_with_docker_swarm %}), creating each
+[docker-machine commands examined]({% post_url 2015-08-23-getting_started_with_docker_swarm %}), such as creating each
 resource within a single resource group which makes it easier to
 manage going forwards as well as providing more control over the
 resources created.
