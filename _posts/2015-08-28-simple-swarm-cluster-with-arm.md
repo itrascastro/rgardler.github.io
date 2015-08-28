@@ -101,10 +101,13 @@ export DOCKER_HOST="tcp://DNS_NAMEmaster.westus.cloudapp.azure.com:2376"
 {% endhighlight %}
 
 Remember to replace DNS_NAME with the value of the DNS parameter you
-provided when deploying the template. Once you have run this command
-you work with the Swarm cluster just as you would any other Docker
-machine. Swarm will attempt to balance the containers across the three
-hosts.
+provided when deploying the template. Also please do not use this in
+production. We are using no authentication for connecting to the
+Swarm, it's open to the whole world!
+
+Once you have run this command you work with the Swarm cluster just as
+you would any other Docker machine. Swarm will attempt to balance the
+containers across the three hosts.
 
 
 
