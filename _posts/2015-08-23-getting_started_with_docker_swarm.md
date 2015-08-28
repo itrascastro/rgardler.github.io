@@ -12,7 +12,7 @@ a quick "getting started" guide for Docker Swarm.
 
 # The Objective
 
-We want to create a swarm cluster of two machines and then deploy
+We want to create a swarm cluster of three machines and then deploy
 multiple containers to that cluster. We will not do anything to
 control where the containers run, we'll just leave that up to the
 default scheduler in Swarm.
@@ -148,10 +148,10 @@ simply create the containers on the host your master is running on.
 Now lets deploy our first container:
 
 {% highlight bash %}
-docker run -itd --box0 busybox
+docker run -itd --name box0 busybox
 {% endhighlight %}
 
-Because we are using Swarm we do not know which of the two nodes
+Because we are using Swarm we do not know which of the three nodes
 this has been created on. If we want to know we can find out by
 looking at the running processes on the Swarm:
 
@@ -175,7 +175,7 @@ docker ps
 {% endhighlight %}
 
 You should see a fairly even distribution of the containers across
-your two nodes.
+your three nodes.
 
 # Next Steps
 

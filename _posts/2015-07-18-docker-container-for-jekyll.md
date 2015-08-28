@@ -22,7 +22,7 @@ commonly downloaded one at the time,
 [grahamc/jekyll](https://registry.hub.docker.com/u/grahamc/jekyll/).
 
 {% highlight bash %}
-  docker run --rm -v "$PWD:/src" -p 4000:4000 -t jekyll grahamc/jekyll serve -H CLIENT_IP --drafts
+  docker run --rm -v "$PWD:/src" -p 4000:4000 --name jekyll grahamc/jekyll serve -H CLIENT_IP --drafts
 {% endhighlight %}
 
 Now just visit the site at http://CLIENT_IP:4000
