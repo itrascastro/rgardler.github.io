@@ -40,7 +40,7 @@ content.
 
 By default slides come from a readme.md file and looks like this:
 
-```markdown
+{% highlight bash %}
 # This is the first slide
 
 ### Author
@@ -67,7 +67,7 @@ Can be skipped by navigating with 'right arrow'
 Child slides are separated from the "parent
 slide" with '--'
 
-```
+{% endhighlight %}
 
 ## Writing Long Form content
 
@@ -76,7 +76,7 @@ Details'. Content that follows this heading will not be displayed on
 the slide, but will be availble in any other markdown rendering of the
 content. A slide with longform details would therefore look like this:
 
-```
+{% highlight bash %}
 # Slide title
 
 Some slide content
@@ -87,7 +87,7 @@ A little more content
 
 This is the longform description. It can contain any markdown you
 want.
-```
+{% endhighlight %}
 
 This results in a document that has some summary information at the
 start of each section followed by the expanded detail. This format not
@@ -100,9 +100,9 @@ The following command starts the revealjs container with some default content
 (which is actually the readme file of the
 [corresponding GitHub project](https://github.com/rgardler/docker-demos/tree/master/revealjs))
 
-```bash
+{% highlight bash %}bash
 docker run --rm -p 8000:8000 rgardler/revealjs
-```
+{% endhighlight %}
 
 Now point your browser at http://yourhost:8000
 
@@ -111,37 +111,37 @@ Now point your browser at http://yourhost:8000
 Creating your own presentation container is really easy. First, create
 a Dockerfile:
 
-```Dockerfile
+{% highlight dockerfile %}
 FROM rgardler/revealjs
-```
+{% endhighlight %}
 
 Now create your readme.md content as described above.
 
 Build your container:
 
-```bash
+{% highlight bash %}
 docker build slides .
-```
+{% endhighlight %}
 
 Start your container:
 
-```bash
+{% highlight bash %}
 docker run --rm -p 8000:8000 slides
-```
+{% endhighlight %}
 
 Navigate to your deck:
 
-```
+{% highlight bash %}
 http://localhost:8000
-```
+{% endhighlight %}
 
 You can, of course, use your Dockerfile to make your container
 behave differently. For example you might choose to use a different
 markdown file for your slides:
 
-```
+{% highlight bash %}
 COPY docs/introduction.md /revealjs/slides.md
-```
+{% endhighlight %}
 
 Or you could Reveal.js replace index.html with your own version in
 order to customize the behaviour of reveal.js.
