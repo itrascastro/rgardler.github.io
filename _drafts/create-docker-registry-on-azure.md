@@ -51,3 +51,5 @@ FIXME: command to push a contianer to the registry
 
 The official [Docker docs](http://docs.docker.com/registry/) are the
 best place to learn more about Docker Registries.
+
+Ahmets post: https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-docker-registry-on-azure-blob-storage/
