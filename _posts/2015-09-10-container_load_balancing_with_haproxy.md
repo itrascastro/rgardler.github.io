@@ -8,7 +8,7 @@ Load balancing is important for many applications. A popular open source load ba
 
 # Simple Load Balancing
 
-In an earlier post I created a [Simple Load Balanced Application with Docker]({{ post.url 2015-08-11-simple_loadbalancing_with_docker }}). This used an HAProxy container available in Docker Hub. In sumamry what was needed was:
+In an earlier post I created a [Simple Load Balanced Application with Docker]({{ post_url 2015-08-11-simple_loadbalancing_with_docker }}). This used an HAProxy container available in Docker Hub. In sumamry what was needed was:
 
 {% highlight bash %}
 docker run -t -d -p 8080:8080 --name=stage_rest rest
@@ -66,4 +66,4 @@ docker-compose scale web=2
 
 The eeacms/haproxy container has lots of configuration options, why not [take a look](https://hub.docker.com/r/eeacms/haproxy/).
 
- 
+My colleague [Ahmet](https://twitter.com/ahmetalpbalkan) recommended I also look at [Interlock](https://github.com/Evlos/interlock) - I thought I'd drop a note here to remind me (and you).  
