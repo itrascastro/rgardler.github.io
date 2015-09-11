@@ -8,7 +8,7 @@ Load balancing is important for many applications. A popular open source load ba
 
 # Simple Load Balancing
 
-In an earlier post I created a [Simple Load Balanced Application with Docker]({{ post_url 2015-08-11-simple_loadbalancing_with_docker }}). This used an HAProxy container available in Docker Hub. In sumamry what was needed was:
+In an earlier post I created a [Simple Load Balanced Application with Docker]({% post_url 2015-08-11-simple_loadbalancing_with_docker %}). This used an HAProxy container available in Docker Hub. In sumamry what was needed was:
 
 {% highlight bash %}
 docker run -t -d -p 8080:8080 --name=stage_rest rest
