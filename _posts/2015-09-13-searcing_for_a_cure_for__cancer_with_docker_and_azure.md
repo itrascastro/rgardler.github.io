@@ -6,7 +6,11 @@ tags: [azure, docker, container]
 
 The Folding@Home project allows me to use idle capacity on my Docker hosts to help search for a cure for Cancer (and other diseases like Alzheimers and Parkinson). Here's how you can do it too. 
 
-The short version is install Docker and run 'docker run -d rgardler/fah'.
+The short version is install Docker and run:
+
+{% highlight bash %}
+docker run -d rgardler/fah
+{% endhighlight %}
 
 # A Docker Container to Help Develop Drugs and Therapies
 
@@ -26,4 +30,8 @@ Whenver I run a demo or start some dev work I SSH into my dev box and run a prep
 
 This means I can start my Folding@Home container when I finish a task and logout safe in the knowledge that it won't get in my way when I return. My prepare script will simply stop the container (the Folding@Home project is designed to cope with work units that are not completed).
 
-What I would like to do (and I would love your help with this) is create a script that will detect when I'm not logged into the machine and fire up an instance of the Folding@Home container. In the meantime I just have to remember to type 'docker run -d rgardler/fah' before exiting. 
+What I would like to do (and I would love your help with this) is create a script that will detect when I'm not logged into the machine and fire up an instance of the Folding@Home container. In the meantime I just have to remember to type the following before exiting:
+
+{% highlight bash %}
+docker run -d rgardler/fah
+{% endhighlight %}
