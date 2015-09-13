@@ -11,7 +11,7 @@ quickly moved away to a custom config for my own site.
 
 # Running Locally in Dev Mode
 
-When writing posts it is useful to be able to make edits and see them immedietely in the browser. To do this run
+When writing posts it is useful to be able to make edits and see them immedietely in the browser. It's also useful to have the _drafts folder rendered so that you can check those contents too. To do this run
 
     ./script/dev.sh
 
