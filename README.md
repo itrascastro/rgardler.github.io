@@ -9,6 +9,14 @@ Bootstrap](http://jekyllbootstrap.com/) but since that is unmaintained
 and I don't want to spend all my time generalizing the design it
 quickly moved away to a custom config for my own site.
 
+# Running Locally in Dev Mode
+
+When writing posts it is useful to be able to make edits and see them immedietely in the browser. To do this run
+
+    ./script/dev.sh
+
+You will have a server listening on port 4000.
+
 # Testing with Docker
 
 There is a Dockerfile icluded that makes it easy to test that there
