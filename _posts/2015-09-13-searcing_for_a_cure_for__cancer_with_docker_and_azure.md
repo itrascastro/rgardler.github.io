@@ -6,7 +6,7 @@ tags: [azure, docker, container]
 
 The Folding@Home project allows me to use idle capacity on my Docker hosts to help search for a cure for Cancer (and other diseases like Alzheimers and Parkinson). Here's how you can do it too. 
 
-The short version is install Docker and run:
+The short version is [install Docker](http://docs.docker.com/windows/started/) and run:
 
 {% highlight bash %}
 docker run -d rgardler/fah
