@@ -4,8 +4,8 @@ title: Adding an Edit Link to Github Pages in Jekyll
 tags: [jekyll]
 ---
 
-While I doubt there will be many people offering to fix my speeling
-erros (let alone improve my content), I don't want to miss the chance
+While I doubt there will be many people offering to fix my spelling
+errors (let alone improve my content), I don't want to miss the chance
 that there is a contributor out there. Here's how I added a link to
 each page on this Jekyll generated,GitHub pages hosted site.
 
