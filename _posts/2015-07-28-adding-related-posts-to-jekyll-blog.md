@@ -25,14 +25,14 @@ Here's how:
 {% raw %}
 <ul>
   {% for post in site.posts %}
-    {% if post.url != page.url %}	
-      {% for tag in page.tags %} 
+    {% if post.url != page.url %}
+      {% for tag in page.tags %}
         {% if post.tags contains tag %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% break %}
         {% endif %}
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
+    {% endif %}
   {% endfor %}
 </ul>
 {% endraw %}
